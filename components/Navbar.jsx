@@ -6,8 +6,13 @@ import Link from 'next/link';
 
 import images from '../assets';
 
-const Navbar = () => (
-  <div>Navbar</div>
-);
+const Navbar = () => {
+  const { theme, setTheme } = useTheme();
+
+  console.log({ theme });
+  return (
+    <div>test</div>
+  );
+};
 
 export default Navbar;
